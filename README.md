@@ -1,41 +1,42 @@
 # Java and Maven sample
 
-A fully working sample Maven project that download files from FTP (File Transfer Protocol).
-FTP (File Transfer Protocol) is a standard network protocol used for the transfer of files from one host to another over a TCP-based network, such as the Internet.
+A fully working sample Maven project that download files from FTP (File Transfer Protocol).<br>
+**FTP** (File Transfer Protocol) is a standard network protocol used for the transfer of files from one host to another over a TCP-based network, such as the Internet.<br>
 
-This is targeted at people without Maven experience.
+This is targeted at people without Maven experience.<br>
 
-To build it, you will need to download and unpack the latest (or recent) version of Maven (https://maven.apache.org/download.cgi) and put the mvn command on your path. Then, you will need to install a Java 1.8 (or higher) JDK (not JRE!), and make sure you can run java from the command line. Now you can run mvn clean install and Maven will compile your project, an put the results it in a jar file in the target directory.
+To build it, you will need to download and unpack the latest (or recent) version of Maven (https://maven.apache.org/download.cgi) and put the mvn command on your path.<br>
+Then, you will need to install a **Java 1.8** (or higher) JDK (not JRE!), and make sure you can run java from the command line. Now you can run mvn clean install and Maven will compile your project, an put the results it in a jar file in the target directory.
 
-How you run this code is up to you, but usually you would start by using an IDE like NetBeans, Intellij IDEA, or Eclipse.
+How you run this code is up to you, but usually you would start by using an IDE like **NetBeans, Intellij IDEA, or Eclipse**.<br>
 
-The Maven dependencies may lag behind the official releases a bit.
+The Maven dependencies may lag behind the official releases a bit.<br>
 
-If you notice some problems with this setup, please open an issue.
+If you notice some problems with this setup, please open an issue.<br>
 
-A couple of Maven commands
-Once you have configured your project in your IDE you can build it from there. However if you prefer you can use maven from the command line. In that case you could be interested in this short list of commands:
+A couple of Maven commands<br>
+Once you have configured your project in your IDE you can build it from there. However if you prefer you can use maven from the command line. In that case you could be interested in this short list of commands:<br>
 
-mvn compile: it will just compile the code of your application and tell you if there are errors
-mvn test: it will compile the code of your application and your tests. It will then run your tests (if you wrote any) and let you know if some fails
-mvn install: it will do everything mvn test does and then if everything looks file it will install the library or the application into your local maven repository (typically under /.m2). In this way you could use this library from other projects you want to build on the same machine
-If you need more information please take a look at this quick tutorial.
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+**mvn compile**: it will just compile the code of your application and tell you if there are errors<br>
+**mvn test**: it will compile the code of your application and your tests. It will then run your tests (if you wrote any) and let you know if some fails<br>
+**mvn install**: it will do everything mvn test does and then if everything looks file it will install the library or the application into your local maven repository (typically under /.m2).<br>
+In this way you could use this library from other projects you want to build on the same machine<br>
 
 
 # myFTPBackupApp
-Repository of myFTPBackuppApp - myFTPBackupApp downloads and backup your folders and files that are extracted from FTP(e.g FileZilla Client).
 
-In order to do so you have to add dependency commons.net at pom.xml like this :
+Repository of myFTPBackuppApp - **myFTPBackupApp downloads and backup your folders and files that are extracted from FTP(e.g FileZilla Client).**<br>
 
-To add Apache Commons Net as a dependency in your Java project using Maven, you need to follow these steps:
+In order to do so you have to add dependency **commons.net** at pom.xml like this :<br>
 
-Update pom.xml: Open your pom.xml file located in the root directory of your Maven project.
+To add Apache Commons Net as a dependency in your Java project using Maven, you need to follow these steps:<br>
 
-Add Dependency: Inside the dependencies section of your pom.xml file, add the dependency for Apache Commons Net. You can add the following XML snippet:
+Update pom.xml: Open your pom.xml file located in the root directory of your Maven project.<br>
 
-xml
-Copy code
+Add Dependency: Inside the dependencies section of your **pom.xml** file, add the dependency for Apache Commons Net. You can add the following XML snippet:<br>
+
+
+**Copy code**
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -66,23 +67,24 @@ Copy code
     </properties>
 
 </project>
-This will add the Apache Commons Net library to your project with version 3.8.0. Make sure to use the appropriate version that fits your requirements. You can find the latest version number from Maven Central Repository.
+This will add the **Apache Commons Net** library to your project with version 3.8.0.<br>
+Make sure to use the appropriate version that fits your requirements. You can find the latest version number from Maven Central Repository.
 
 Save the pom.xml: Save the pom.xml file after adding the dependency.
 
 Update Maven Project: If you're using an IDE like IntelliJ IDEA or Eclipse, it will automatically detect the changes in the pom.xml file and download the dependencies. If you're using the command line, navigate to your project directory and run:
 
-bash
-Copy code
-mvn clean install
-This command will download the Apache Commons Net dependency and build your project.
+**Copy Code**
+**mvn clean install**<br>
 
-After these steps, you can start using Apache Commons Net classes in your Java code. Make sure to import the required classes in your Java files as needed.
+This command will download the Apache Commons Net dependency and build your project.<br>
 
-Execute program in main ( FTPDownloader )
+After these steps, you can start using Apache Commons Net classes in your Java code. Make sure to import the required classes in your Java files as needed.<br>
+
+Execute program in main ( FTPDownloader )<br>
 
 
-Insert your credentials at : 
+Insert your credentials at:<br>
 
 public class FtpFolderDownloadService {
 
