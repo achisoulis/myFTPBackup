@@ -36,11 +36,36 @@ Add Dependency: Inside the dependencies section of your pom.xml file, add the de
 
 xml
 Copy code
-<dependency>
-    <groupId>commons-net</groupId>
-    <artifactId>commons-net</artifactId>
-    <version>3.8.0</version>
-</dependency>
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.example</groupId>
+    <artifactId>myFTPBackup</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+<dependencies>
+    <dependency>
+        <groupId>commons-net</groupId>
+        <artifactId>commons-net</artifactId>
+        <version>3.8.0</version>
+    </dependency>
+    <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-lang3</artifactId>
+        <version>3.12.0</version>
+    </dependency>
+</dependencies>
+
+
+    <properties>
+        <maven.compiler.source>18</maven.compiler.source>
+        <maven.compiler.target>18</maven.compiler.target>
+    </properties>
+
+</project>
 This will add the Apache Commons Net library to your project with version 3.8.0. Make sure to use the appropriate version that fits your requirements. You can find the latest version number from Maven Central Repository.
 
 Save the pom.xml: Save the pom.xml file after adding the dependency.
