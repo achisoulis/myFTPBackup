@@ -1,4 +1,4 @@
-# Java and Maven sample
+# An Java Maven simple application.
 
 A fully working sample Maven project that download files from FTP (File Transfer Protocol).<br>
 **FTP** (File Transfer Protocol) is a standard network protocol used for the transfer of files from one host to another over a TCP-based network, such as the Internet.<br>
