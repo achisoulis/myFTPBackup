@@ -86,7 +86,7 @@ Execute program in main ( FTPDownloader )<br>
 
 **public class FtpFolderDownloadService** {
 
-    **public static void FTPFolderDownloader()** {
+    public static void FTPFolderDownloader(){
     
     where : 
 
