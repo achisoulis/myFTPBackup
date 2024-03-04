@@ -72,7 +72,7 @@ Save the pom.xml: Save the pom.xml file after adding the dependency.
 
 Update Maven Project: If you're using an IDE like IntelliJ IDEA or Eclipse, it will automatically detect the changes in the pom.xml file and download the dependencies. If you're using the command line, navigate to your project directory and run:
 
-**Copy Code**
+**Copy Code**<br>
 **mvn clean install**<br>
 
 This command will download the Apache Commons Net dependency and build your project.<br>
@@ -82,11 +82,11 @@ After these steps, you can start using Apache Commons Net classes in your Java c
 Execute program in main ( FTPDownloader )<br>
 
 
-Insert your credentials at:<br>
+**Insert your credentials at**:<br>
 
-public class FtpFolderDownloadService {
+**public class FtpFolderDownloadService** {
 
-    public static void FTPFolderDownloader() {
+    **public static void FTPFolderDownloader()** {
     
     where : 
 
